@@ -135,6 +135,9 @@
 
 
 /*Global styles*/
+body {
+    margin: 0;
+}
 h1 {
     font-family: 'Ilyas';
     font-size: 36px;
