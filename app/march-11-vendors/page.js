@@ -1,20 +1,11 @@
 import Spacer from "../../components/Spacer";
-import Navigation from "../../components/Navigation";
 import Strawberry from "../../components/Strawberry";
-import HeaderDecoration from "../../components/HeaderDecoration";
-import Logo from "../../components/Logo";
-import Subheader from "../../components/Subheader";
 import pageStyles from "../../components/pages.module.css";
-import Footer from "../../components/Footer";
 import PastVendor from "../../components/PastVendor";
 
 export default function March11Vendors() {
   return (
     <div className = {pageStyles.pastVendorsBody}>
-      <HeaderDecoration />
-      <Logo />
-      <Subheader />
-      <Navigation />
       <Strawberry heading = {"MARCH VENDORS"} showLargeStrawberry = {'none'}/>
       <Spacer height = {2}/>
       <PastVendor
@@ -263,7 +254,6 @@ export default function March11Vendors() {
         url1 = {"https://www.instagram.com/wolfbabeshop"}
         text2 = {"polymer clay jewelry"}
       />
-      <Footer/>
     </div>
   );
 }

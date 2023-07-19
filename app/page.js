@@ -1,23 +1,13 @@
-import Styles from "../components/Theme";
 import HomeStyles from "../components/Home.module.css";
-import Logo from "../components/Logo";
-import Subheader from "../components/Subheader"
-import HeaderDecoration from "../components/HeaderDecoration";
 import Button from "../components/Button"
-import Footer from "../components/Footer"
 import Strawberry from "../components/Strawberry"
-import Navigation from "../components/Navigation"
 import Testimonial from "../components/Testimonial";
 import Quotes from "../components/TestimonialsList";
 import Event from "../components/Event"
 
 export default function HomePage() {
     return (
-      <div className={HomeStyles.body} style={Styles.body}>
-      <HeaderDecoration />
-      <Logo />
-      <Subheader />
-      <Navigation />
+      <div className={HomeStyles.body}>
       <div className={HomeStyles.content}>
         <div className = {HomeStyles.nextContainer}>
           <Strawberry heading='NEXT' showMediumStrawberry = {'none'}/>
@@ -87,7 +77,6 @@ export default function HomePage() {
         </div>
         
       </div>
-      <Footer />
     </div>
     );
 }

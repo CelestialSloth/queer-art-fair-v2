@@ -1,21 +1,11 @@
 import Spacer from "../../components/Spacer";
-import Navigation from "../../components/Navigation";
 import Strawberry from "../../components/Strawberry";
-import HeaderDecoration from "../../components/HeaderDecoration";
-import Logo from "../../components/Logo";
-import Subheader from "../../components/Subheader";
 import pageStyles from "../../components/pages.module.css";
-import Footer from "../../components/Footer";
 import PastVendor from "../../components/PastVendor";
-import Styles from "../../components/Theme";
 
 export default function June17Vendors() {
   return (
-    <div className = {pageStyles.pastVendorsBody} style={Styles.body}>
-      <HeaderDecoration />
-      <Logo />
-      <Subheader />
-      <Navigation />
+    <div className = {pageStyles.pastVendorsBody}>
       <Strawberry heading = {"JUNE 17 VENDORS"} showLargeStrawberry = {'none'}/>
       <Spacer height = {2}/>
       <PastVendor 
@@ -194,7 +184,6 @@ export default function June17Vendors() {
         text2 = {"fun jewelry"}
       />    
 
-      <Footer />
     </div>
 
   );

@@ -1,22 +1,13 @@
-import Styles from "../../components/Theme";
 import Navigation from "../../components/Navigation";
 import Strawberry from "../../components/Strawberry";
 import ContentComponent from "./ContentComponent";
 import Spacer from "../../components/Spacer";
 import pageStyles from '../../components/pages.module.css';
-import HeaderDecoration from "../../components/HeaderDecoration";
-import Logo from "../../components/Logo";
-import Subheader from "../../components/Subheader";
-import Footer from "../../components/Footer";
 import NextEvent from "./NextEvent";
 
 export default function Events() {
   return (
-    <div style={Styles.body} className = {pageStyles.eventsBody}>
-        <HeaderDecoration />
-        <Logo />
-        <Subheader />
-        <Navigation />
+    <div className = {pageStyles.eventsBody}>
         <Strawberry heading = {"NEXT"} showLargeStrawberry = {'none'}/>
         <Spacer height = {5}/>
         <NextEvent

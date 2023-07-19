@@ -1,21 +1,12 @@
-import Styles from '../../components/Theme.js';
 import Spacer from "../../components/Spacer";
-import Navigation from "../../components/Navigation";
 import Strawberry from "../../components/Strawberry";
-import HeaderDecoration from "../../components/HeaderDecoration";
-import Logo from "../../components/Logo";
-import Subheader from "../../components/Subheader";
 import pageStyles from "../../components/pages.module.css";
 import Footer from "../../components/Footer";
 import GalleryPics from "../../components/GalleryPics";
 
 export default function Gallery() {
     return (
-        <div className = {pageStyles.galleryBody} style = {Styles.body}>
-            <HeaderDecoration />
-            <Logo />
-            <Subheader />
-            <Navigation />
+        <div className = {pageStyles.galleryBody}>
             <Strawberry heading = {"PHOTO GALLERY"} showLargeStrawberry = {"none"}/>
             <Spacer height = {2}/>
             <GalleryPics imagePath1 = {"url('/photos/P3115740-min.JPG')"} imagePath2 = {"url('/photos/P3115759-min.JPG')"}/>
