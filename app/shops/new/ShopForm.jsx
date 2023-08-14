@@ -4,7 +4,7 @@ import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 import Input from "../../components/forms/input";
 import styles from "./ShopForm.module.css";
 import { useRouter } from "next/navigation";
-import { Label } from "../../components/forms/label";
+import Label from "../../components/forms/label";
 // the form to create a new shop
 // Info needed: owner_id, name, description, items (just initialize the array)
 
